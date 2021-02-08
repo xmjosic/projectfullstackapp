@@ -30,8 +30,11 @@
       <form class="form-inline my-2 my-lg-0">
         <input
           type="search"
+          (ngModelChange)="searchEmployees(key.value)"
+          #key="ngModel"
+          ngModel
           name="key"
-          id="searchName"
+          id="search"
           class="form-control mr-sm-2"
           placeholder="Search employees..."
           required
